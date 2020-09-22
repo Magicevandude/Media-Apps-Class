@@ -5,13 +5,17 @@ function setup() {
 // drawing a cat
 function draw() {
     background(204);
-    line(20, 50, 420, 110);
-    triangle(25,20,45,40,70,75);
-    rect(160, 30, 260, 20);
-    line(20, 50, 420, 110);
-    line(20, 50, 420, 110);
-    ellipse(20,40,5,7);
-    ellipse(10,30,2,5);
+    
+    triangle(200,25,100,35,150,70);
+    line(200, 110, 200, 200);
+    line(300, 110, 300, 200);
+    line(90, 700, 90, 700);
+
+    rect(150, 75, 175, 40);
+    ellipse(125,100,100,100);
+    
+    ellipse(120,80,10,10);
+    line(400, 20, 325, 75);
     //if (mouseIsPressed) {
     //fill(0);
   } //else {
