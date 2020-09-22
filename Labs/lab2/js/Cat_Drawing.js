@@ -16,10 +16,10 @@ function draw() {
     
     ellipse(120,80,10,10);
     line(400, 20, 325, 75);
-    //if (mouseIsPressed) {
-    //fill(0);
-  } //else {
-    //fill(255);
+    
+    fill(0);
+    
+    fill(0);
     
   
-    //ellipse(mouseX, mouseY, 80, 80);
+} 
