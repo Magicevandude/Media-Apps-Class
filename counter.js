@@ -1,4 +1,4 @@
-let numbers = 0
+let numbers = 5
 
 function draw() {
     numbers = numbers + 1;
