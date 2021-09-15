@@ -1,6 +1,6 @@
 let circleX = 100
 let circleY = 150
-let circleR = 200 
+let circleR = 175 
 
 function setup() {
     createCanvas(800, 600);
