@@ -1,18 +1,18 @@
-var radius = 40;
-var x = -radius;
-var speed = 0.5;
-
-
+// canvas creating function
 function setup() {
-    createCanvas(240, 120);
-    ellipseMode(RADIUS);
+    createCanvas(1500, 1500);
+    
 }
-
+// drawing function for black circle
 function draw() {
-    background(0);
-    x += speed;  // Increases the value of x over time
-    arc(x, 60, radius, radius, 0.52, 5.76);
-
+    background(255);
+    fill(0)
+    
+// for loop to draw black circle with radius of 25 and incrementing the position by 50 each loop
+    for (let circleX = 25; circleX <=1250; circleX += 50) {
+        circle(circleX, 450, 50); // positions the black circles in the middle of the screen.
+    }
 }
+
 
 
