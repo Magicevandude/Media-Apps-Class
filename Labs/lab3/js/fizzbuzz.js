@@ -1,10 +1,10 @@
-var radius = 50;
+var radius = 40;
 var x = -radius;
 var speed = 0.5;
 
 
 function setup() {
-    createCanvas(800, 600);
+    createCanvas(240, 120);
     ellipseMode(RADIUS);
 }
 
@@ -15,8 +15,4 @@ function draw() {
 
 }
 
-function draw() {
-var fr = frameRate();
-print(fr);
-}
 
