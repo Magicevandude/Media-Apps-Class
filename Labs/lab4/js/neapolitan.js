@@ -1,3 +1,4 @@
+// assigning the array to represent the drawing order
 icecream = ['vanilla','strawberry','chocolate']
 
 var rectcolor
