@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>    
+        #overandoutsquare {
+            background-color: #0000FF; 
+            width: 100px;
+            height: 100px;
+          }
+            
+        </style>
+
 </head>
 <body>
     <p>Click the button increase the size of the square by 10% each click!</p>
 
+    <div id="overandoutsquare">
     
-    
-    
+
+
+    </div>   
+
+
     <script>
-function setup() {
-    createCanvas(1000, 1000);
-    
+var width = 100
+var height = 100
+var grew = 1.1
+
+var overandoutsquare = document.getElementById("overandoutsquare");
+overandoutsquare.addEventListener("click",grow)
+function grow (){
+width = width * grew;
+height = height * grew;
+overandoutsquare.style.width=width + "px";
+overandoutsquare.style.height=height + "px";
+
 }
 
-function draw() {
-    var x = 100;
-    var y = 100;
-    var z = 1.1;
-    background(62, 237, 108);
-    while(onclick == TRUE) {
-        squarex = x * z;
-        squarey = y * z;
-        rect(squarex, squarey, 50, 50);
-    }
-    
-}
+
     </script>
 <button onclick="draw()">Click me</button> 
 
