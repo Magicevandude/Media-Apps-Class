@@ -1,59 +1,66 @@
-class Particle {
+//Creating class to display my animated object
+class Myobject {
+    // random math number function to change x and y over each iteration. 
+    x = Math.random() * 700;
+    y = Math.random() * 350;
 
-    x = Math.random() * 600;
-    y = Math.random() * 400;
-    velocity = { x: 2, y: 2 };
-    gravity = .05;
-    color = [ Math.random() * 255, 100, 100]
-    
+    velocity = { x: 5, y: 5 }; 
+
+    color = [ Math.random() * 225, 225, 225];
+
+
+
+    // update function for drawing the object across the screen
     update() {
-        
-        circle(this.x, this.y, 10);
-    
-    
-        this.x += this.velocity.x;
-        this.y += this.velocity.y;
-    
-    
-        this.velocity.y += this.gravity;
-    
-    }   
-}    
+    noStroke();    
+    fill ( this.color );
+    circle(this.x, this.y, 10);
 
-let particles = [];
+    this.x += this.velocity.x;
+    this.y += this.velocity.y;
+    }
 
-    function setup() {
-        createCanvas(600, 400);
-    
-    for(var i =0; i < 123; i++){
-        particles[i] = new Particle();
-    }
-    
-    
-    
-    
-    
-function draw() {
-    for(var i =0; i < particles.length; i++) {
-    particles[i].update();
-    }
+
+
+
+
+
 }
+
+
+//p5 code block
+//empty list to represent my object
+let object = [];
+
+// canvas setup function
+function setup() {
+    createCanvas(600, 400);
+
+    for( var i =0; i < 123; i++) {
+        object[i] = new Myobject();
     }
 
-
-    
-
-
-    
-
-
+}
+// draw function with for loop
+function draw () {
+    for( var i =0; i < 123; i++) {
+        object[i].update();
 
 
-
+}
 
 
 
 
-    
 
-    
+
+
+
+
+
+
+
+
+
+
+}
