@@ -1,30 +1,22 @@
 
-let x = 10;
-let y = 10;
-let xVel = 1;
-let yVel = 1;
+let getwowtoons = document.getElementsByClassName("wowtoons");
 
+let wowtoons = [
+    { name: "Magicevan", race: "Human", class: "Mage", level: 70},
+    { name: "Naturalevan", race: "Night Elf", class: "Druid", level: 70},
+    { name: "Shadowevan", race: "Human", class: "Warlock", level: 62},
+    { name: "Hunterevan", race: "Dwarf", class: "Hunter", level: 61}
 
-let car1 = {
-    make: "Mercedes Benz",
-    model: "E55 AMG",
-    year: 2006,
-    topspeed: 200,
-    horsepower: 500,
-    engine: "M113K",
-    capacity: "5 Passengers",
-    zeroto60time: 4.3,
-    miles: 0,
+];
 
+console.log( wowtoons[1].level )
 
-};
-
-console.log(car1.year,car1.make,car1.model);
-
-function findmileage() {
-    car1.miles = 46500;
-    console.log(car1.miles);
-
-
+function wowtooninfo () {
+for(let i = 0; i < getwowtoons.level; i++) {
+    let newEl = document.createElement("div");
+    newEl.innerHTML = wowtoons[i].name + ": " + wowtoons[i].level;
+    newEl.classList.add("level");
+    getwowtoons.appendChild(newEl);
 }
 
+}
