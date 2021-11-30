@@ -9,9 +9,10 @@
 function numberfilter (min, max) {
     
     // min and max limiters
-    min = Math.ceil(min);
     max = Math.floor(max);
     
     //return statement for filtered numbers in function
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
