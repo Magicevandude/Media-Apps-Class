@@ -17,6 +17,6 @@ for(var i = 0; i < 4; i++) {
 }
 
 function changedivcolor(event) {
-    event.target.style.backgroundColor = "#9A6ED4";
+    event.target.style.backgroundColor = "#0000FF";
 
 }
