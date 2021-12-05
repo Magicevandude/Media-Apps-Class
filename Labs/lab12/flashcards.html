@@ -7,12 +7,12 @@
 </head>
 <body>
 
-    <form action="js/makerandom.js" method="get"></form>
-    <button onclick="numberfilter()">Lets find your magic number between 1-10!</button>
-
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js'></script>
-    <script src='js/makerandom.js'></script>
+    <div id="flashcards" data-response="click the text below to find the answers to the questions">Click the text to learn the instructions</div><br>
+    <div onclick="flashcard(event)" data-response="2 Million People">What is the population of the Indianapolis metro area?</div><br>
+    <div onclick="flashcard(event)" data-response="Perth Western Australia">What is the most isolated major city in the world with a million+ people?</div><br>
+    <div onclick="flashcard(event)" data-response="Hugh Jackman">Who played Wolverine in the X-Men franchise until 2017?</div>
+    
+    <script src='js/flashcards.js'></script>
     
 
 
