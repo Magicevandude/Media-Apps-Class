@@ -1,7 +1,8 @@
 
-
+//HTML div fetch variable
 let getwowtoons = document.getElementById("wowtoons");
 
+//wowtoons array
 let wowtoons = [
     { name: "Magicevan", race: "Human", class: "Mage", level: 70},
     { name: "Naturalevan", race: "Night Elf", class: "Druid", level: 70},
@@ -11,7 +12,7 @@ let wowtoons = [
 ];
 
 
-
+//function with for loop to iterate the items in the wowtoons arrays. 
 function wowtooninfo () {
     
 for(let i = 0; i < wowtoons.length; i++) {
