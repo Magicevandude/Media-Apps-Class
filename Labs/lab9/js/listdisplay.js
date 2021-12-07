@@ -1,5 +1,6 @@
 
-let getwowtoons = document.getElementsByClassName("wowtoons");
+
+let getwowtoons = document.getElementById("wowtoons");
 
 let wowtoons = [
     { name: "Magicevan", race: "Human", class: "Mage", level: 70},
@@ -9,14 +10,17 @@ let wowtoons = [
 
 ];
 
-console.log( wowtoons[1].level )
+
 
 function wowtooninfo () {
-for(let i = 0; i < getwowtoons.level; i++) {
+    
+for(let i = 0; i < wowtoons.length; i++) {
+    console.log( wowtoons[1].level )
     let newEl = document.createElement("div");
-    newEl.innerHTML = wowtoons[i].name + ": " + wowtoons[i].level;
+    newEl.innerHTML = wowtoons[i].name + ": " + wowtoons[i].race + ":  " + wowtoons[i].class + ":  " + wowtoons[i].level;
     newEl.classList.add("level");
     getwowtoons.appendChild(newEl);
+    
 }
 
 }
